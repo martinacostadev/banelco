@@ -9,7 +9,11 @@ const Home: NextPage = () => {
         <Image src='/img/banelco.jpg' width='150' height='0' />
       </div>
       <div className='flex justify-center bg-gray-100 rounded-xl p-4 text-2xl font-semibold text-blue-700'>
-        SELECCIONA LA OPERACION
+        SELECCIONA EL IMPORTE
+      </div>
+
+      <div className='flex justify-center mt-4 bg-red-700 rounded-3xl p-4 text-xl font-semibold text-white'>
+        MÁXIMO DISPONIBLE: 4000
       </div>
 
       <body className='cursor-pointer'>
@@ -19,13 +23,13 @@ const Home: NextPage = () => {
                 <Image src='/img/backarrow.svg' width='48' height='48' />
               </div>
               <div className='text-xl text-red-700 font-semibold w-1/3'>
-                TRANSFEREN.{'\n'}Y DEPOSITOS
+                1000
               </div>
             </div>
 
             <div className='flex items-center justify-end w-full h-20 bg-gray-100 rounded-r-3xl'>
               <div className='text-xl text-red-700 font-semibold w-1/3 text-right'>
-              EXTRACION/{'\n'}ADELANTO
+              OTRO{'\n'}IMPORTE
               </div>
               <div className='flex items-center justify-end w-16 h-full bg-red-700 ml-4 rounded-r-3xl'>
                 <Image src='/img/forwardarrow.svg' width='48' height='48' />
@@ -39,13 +43,13 @@ const Home: NextPage = () => {
                 <Image src='/img/backarrow.svg' width='48' height='48' />
               </div>
               <div className='text-xl text-red-700 font-semibold w-1/3'>
-                CLAVES
+                2000
               </div>
             </div>
 
             <div className='flex items-center justify-end w-full h-20 bg-gray-100 rounded-r-3xl'>
               <div className='text-xl text-red-700 font-semibold w-1/3 text-right'>
-                CONSULTA
+                3000
               </div>
               <div className='flex items-center justify-end w-16 h-full bg-red-700 ml-4 rounded-r-3xl'>
                 <Image src='/img/forwardarrow.svg' width='48' height='48' />
@@ -53,79 +57,30 @@ const Home: NextPage = () => {
             </div>
         </div>
 
-        <div className='columns-2 mt-4'>
-            <div className='flex items-center w-full h-20 bg-gray-100 rounded-l-3xl'>
+        <div className='columns-1 mt-4'>
+            <div className='flex items-center w-1/2 h-20 bg-gray-100 rounded-l-3xl'>
               <div className='flex items-center w-16 h-full bg-red-700 mr-4 rounded-l-3xl'>
                 <Image src='/img/backarrow.svg' width='48' height='48' />
               </div>
               <div className='text-xl text-red-700 font-semibold w-1/3'>
-              OTRAS{'\n'}OPERACIONES
-              </div>
-            </div>
-
-            <div className='flex items-center justify-end w-full h-20 bg-gray-100 rounded-r-3xl'>
-              <div className='text-xl whitespace-pre-wrap text-red-700 font-semibold w-30 text-right'>
-                PAGO{"\n"}MIS CUENTAS
-              </div>
-              <div className='flex items-center justify-end w-16 h-full bg-red-700 ml-4 rounded-r-3xl'>
-                <Image src='/img/forwardarrow.svg' width='48' height='48' />
+                4000
               </div>
             </div>
         </div>
 
-        <div className='columns-2 mt-4'>
-            <Link href='/extract'>
+        <div className='mt-4'>
+            <Link href='/'>
               <div className='flex items-center w-full h-20 bg-gray-100 rounded-l-3xl'>
                 <div className='flex items-center w-16 h-full bg-red-700 mr-4 rounded-l-3xl'>
                   <Image src='/img/backarrow.svg' width='48' height='48' />
                 </div>
-                <div className='text-xl whitespace-pre-wrap text-red-700 font-semibold'>
-                  EXTRACCION{"\n"}RAPIDA $$$
+                <div className='text-xl text-red-700 font-semibold w-1/3'>
+                  VOLVER
                 </div>
               </div>
             </Link>
-
-            <div className='flex items-center justify-end w-full h-20 bg-gray-100 rounded-r-3xl'>
-              <div className='text-xl text-red-700 font-semibold w-1/3 text-right'>
-                RECARGAS
-              </div>
-              <div className='flex items-center justify-end w-16 h-full bg-red-700 ml-4 rounded-r-3xl'>
-                <Image src='/img/forwardarrow.svg' width='48' height='48' />
-              </div>
-            </div>
-        </div>
-
-        <div className='flex flex-col justify-center mt-4'>
-          <h2 className='text-xl font-semibold text-red-800'>Y si el cajero no tuviese plata:</h2>
-        </div>
-
-        <div className='columns-2 mt-4'>
-            <Link href='/extract-disable'>
-              <div className='flex items-center w-full h-20 bg-gray-100 rounded-l-3xl'>
-                <div className='flex items-center w-16 h-full bg-red-700 mr-4 rounded-l-3xl'>
-                  <Image src='/img/backarrow.svg' width='48' height='48' />
-                </div>
-                <div className='text-xl whitespace-pre-wrap text-red-700 font-semibold'>
-                  EXTRACCION{"\n"}RAPIDA $$$
-                </div>
-              </div>
-            </Link>
-
-            <div className='flex items-center justify-end w-full h-20 bg-gray-100 rounded-r-3xl'>
-              <div className='text-xl text-red-700 font-semibold w-1/3 text-right'>
-                RECARGAS
-              </div>
-              <div className='flex items-center justify-end w-16 h-full bg-red-700 ml-4 rounded-r-3xl'>
-                <Image src='/img/forwardarrow.svg' width='48' height='48' />
-              </div>
-            </div>
         </div>
       </body>
-
-      <div className='flex flex-col justify-center items-center mt-12'>
-        <h2 className='mb-8 text-xl font-semibold text-red-800'>Antes:</h2>
-        <Image className='rounded-lg' src='/img/actual.jpg' width='600' height='400' />
-      </div>
 
       <Link href='https://twitter.com/martindevaluado'>
         <div className='flex flex-col justify-center items-center mt-8'>
